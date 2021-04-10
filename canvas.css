@@ -1,8 +1,24 @@
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+	margin: 0;
+	padding: 0;
+	/* overflow: hidden; */
 }
-canvas{
-    position: absolute;
+canvas {
+	position: absolute;
+	z-index: 0;
+}
+.form-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 100;
+	transform: translate(-50%, -50%);
+}
+.form-body {
+	background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 15px -10px black;
+	min-width: 300px;
+	border-radius: 5px;
+	padding: 10px;
+    box-sizing: border-box;
 }
