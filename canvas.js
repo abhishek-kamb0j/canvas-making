@@ -107,7 +107,14 @@ function Circle(x, y, dx, dy, radius) {
 var largeCircleArray = [];
 function init() {
 	largeCircleArray = [];
-	for (let i = 0; i < 1000; i++) {
+	let numberOfBubles = 1000;
+	if(window.innerWidth<1024){
+		numberOfBubles = 800;
+	}else if(window.innerWidth<768){
+		numberOfBubles = 600;
+	}
+	console.log('wdith',window.innerWidth,'height',window.innerHeight);
+	for (let i = 0; i < numberOfBubles; i++) {
 		var radius = Math.random() * 10 + 1;
 		var x = Math.random() * (innerWidth - radius * 2) + radius;
 		var y = Math.random() * (innerHeight - radius * 2) + radius;

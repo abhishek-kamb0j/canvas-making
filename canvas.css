@@ -4,8 +4,13 @@ body {
 	/* overflow: hidden; */
 }
 canvas {
-	position: absolute;
+	/* position: absolute; */
 	z-index: 0;
+}
+.canvas-div{
+	width:100vw;
+	height: 100vh;
+	overflow: hidden;
 }
 .form-box {
 	position: absolute;
